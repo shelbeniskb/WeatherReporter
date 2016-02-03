@@ -1,0 +1,68 @@
+.report-container {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  color: #61A5E8;
+
+  .report-header {
+    color: #7ECF51;
+    border: 1px solid #C1BABA;
+    border-bottom: none;
+    padding-top: 5px;
+
+    .header-main {
+      width: 100px;
+      float: left;
+      padding-left: 10px;
+
+      .city {
+        margin-top: 5px;
+        font-size: 24px;
+      }
+
+      .wendu {
+        top: 5px;
+        font-size: 36px;
+      }
+    }
+
+    .header-ganmao {
+      margin-top: 5px;
+      font-size: 16px;
+      padding-top: 5px;
+      color: #E3935D;
+    }
+  }
+
+  .report-body {
+    .forecast {
+      float: left;
+      padding: 10px;
+      height: 120px;
+      width: 100px;
+      box-sizing: border-box;
+      border: 1px solid #C1BABA;
+      border-left: none;
+
+      &.forecast-0 {
+        border-top: none;
+        border-left: 1px solid #C1BABA;
+      }
+
+      .date, .wendu, .type, .fengxiang {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
