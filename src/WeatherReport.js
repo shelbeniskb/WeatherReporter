@@ -59,7 +59,6 @@ class WeatherReport extends Component {
   }
 
   render() {
-    console.log(this.props.report);
     return (
       <div className="report-container">
         {this.renderWeatherReportHeader()}

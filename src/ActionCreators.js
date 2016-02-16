@@ -1,6 +1,8 @@
+import { urlMap } from './utils';
+
 export function getCity() {
   return {
-    url: 'http://int.dpool.sina.com.cn/iplookup/iplookup.php',
+    url: urlMap.cityUrl,
     params: {
       format: 'json',
     },
@@ -10,7 +12,7 @@ export function getCity() {
 
 export function getWeather(city) {
   return {
-    url: `http://wthrcdn.etouch.cn/weather_mini`,
+    url: urlMap.weatherUrl,
     params: {
       city: encodeURI(city),
     },
@@ -25,7 +27,10 @@ export function getCityThenWeather() {
       const state = getState();
       const city = state.report.city;
 
-      dispatch(getWeather(city));
+      return dispatch(getWeather(city));
+    },
+    (dispatch, getState) => {
+      console.log(getState());
     },
   ];
 }

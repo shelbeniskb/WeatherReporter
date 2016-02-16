@@ -1,5 +1,5 @@
 .report-container {
-  width: 500px;
+  width: 800px;
   height: 500px;
   margin: 50px auto;
   color: #61A5E8;
@@ -11,9 +11,9 @@
     padding-top: 5px;
 
     .header-main {
-      width: 100px;
+      width: 130px;
       float: left;
-      padding-left: 10px;
+      padding-left: 30px;
 
       .city {
         margin-top: 5px;
@@ -27,7 +27,7 @@
     }
 
     .header-ganmao {
-      margin-top: 5px;
+      margin-top: 15px;
       font-size: 16px;
       padding-top: 5px;
       color: #E3935D;
@@ -38,8 +38,9 @@
     .forecast {
       float: left;
       padding: 10px;
+      padding-left: 20px;
       height: 120px;
-      width: 100px;
+      width: 160px;
       box-sizing: border-box;
       border: 1px solid #C1BABA;
       border-left: none;
